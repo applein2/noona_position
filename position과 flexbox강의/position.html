@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="box red">
+        box1
+    </div>
+
+    <div class="box yellow locate">
+        box2
+    </div>
+
+    <div class="box blue">
+        box3
+    </div>
+</body>
+</html>
+
+<!-- position과 flexbox
+position 
+- relative: 요소가 원래 있던 위치를 기준으로 하여 top, left, right, bottom으로 움직임
+- absolute: 요소가 속한 부모 태그의 전체 픽셀을 기준으로 top, left, right, bottom으로 움직임
+- 위의 div 요소의 부모 요소는 body, 따라서 absolute를 주고 top 30, left 30 px을 주면 
+body를 기준으로 왼쪽으로 30px 떨어지고, top에서 30px 떨어짐. 
+- 여기서 부모 태그는 relative, absolute, fixed 속성 중 하나여야 함. 만약 부모 태그가 해당 속성을 가지고 있지 않다면
+body 태그 기준으로 움직임. 
+
+- fixed: absolute와 비슷하지만, 차이가 있음. fixed는 absolute 위치와 같이 움직이나,
+스크롤을 움직여도 그 위치에서 고정되어 움직이지 않음. (absolute는 스크롤 내리면 그냥 넘어감)
+- sticky: relative와 비슷하지만, 스크롤로 내리면 fixed 처럼 그 위치에 고정됨. 
+
+- static: 웹사이트 기본 속성 값, top, right, bottom, left 등 위치 속성은 무시함
+
+-->
