@@ -1,12 +1,88 @@
-.box {
+.main {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
 }
 
-.box-design {
+.sub-main {
+    display: flex;
+}
+
+.box {
+    color: white;
     width: 100px;
     height: 100px;
     background-color: black;
-    color: white;
 }
 
+.mr-5 {
+    margin-right: 5px;
+}
+
+.main1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.center {
+    align-self: center;
+}
+
+.end {
+    align-self: flex-end;
+}
+
+.main2 {
+    display: flex;
+    justify-content: center;
+}
+
+.large{
+    width: 200px;
+    height: 200px;
+    background-color: grey;
+    position: relative;
+}
+
+.small {
+    position: absolute;
+    right: 50px;
+    top: 50px;
+}
+
+
+.main3 {
+    display: flex;
+}
+
+.left {
+    position: relative;
+}
+
+.right {
+    background-color: grey;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+}
+
+
+.largebig {
+    width: 400px;
+    height: 150px;
+    background-color: grey;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+}
+
+.bottom {
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+}
+
+.top {
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+}
