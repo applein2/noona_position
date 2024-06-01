@@ -1,0 +1,11 @@
+.mother {
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-around;
+}
+
+.children {
+    background-color: blueviolet;
+    width: 100px;
+    height: 100px;
+}

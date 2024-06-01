@@ -4,8 +4,68 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="flexbox.css">
 </head>
 <body>
-    
+    <div class="mother">
+        <div class="children">
+            children1
+        </div>
+        <div class="children">
+            children2
+        </div>
+        <div class="children">
+            children3
+        </div>
+    </div>
 </body>
 </html>
+
+<!-- display: flex; 
+- display: flex는 모든 요소를 가로로 둔다.
+- 그리고 부모 요소에 적어줘 적용을 하고, 그 부모의 자식 요소들에 적용되어 컨트롤 된다. 
+
+- justify-content : display: flex; 를 주고난 후 가로로 요소들을 움직이는 데 사용되는 속성.
+- flex-start, flex-end는 각각 자식 요소들을 맨 처음, 맨 끝으로 정렬. center는 가운데, space-between 속성은
+각각 일정한 간격을 두고 자식 요소들을 가로로 띄어놓음. space-around는 자식 요소들을 적당히 모이게 하고,
+일정한 간격을 두게 함. 
+- 이러한 display: flex를 하고 justify-content 속성을 사용하면 화면 크기를 줄여도 요소의 가로 간격 등이 유지됨. 
+
+
+- 세로 기준으로 정렬하는 방법은?
+- align-items 속성을 사용. 주의할 것은, flex를 사용하더라도 부모 요소는 자식 요소의 height만 간섭 가능하기에
+부모 요소의 높이만큼만 align-items 속성이 먹게 됨. 
+- 마찬가지로 center, flex-start, flex-end를 사용해 수직으로 정렬 가능 (space-btween, space-around 속성은 없음) 
+
+- 가로 정렬을 세로로 바꾸는 방법은?
+- flex-direction: column; 을 주면 됨 
+- 이렇게 하면 flex를 주고 justify-content를 사용하면 세로로 자식 요소들이 움직이게 됨. 
+- 즉 flex-direction: column을 쓰는 순간 가로가 세로가 되고, 세로가 가로가 됨. 
+- 즉 align-items는 수직이 아니라 수평으로 자식 요소들을 움직이게 함. 
+
+- 더 공부하려면 flexbox froggy 사이트에 들어가서 연습 
+
+- flexbox 중 order 속성
+- order는 개별적으로 요소를 지정하여 이동할 수 있는 속성. 
+- -1은 왼쪽, 0은 원래 자리, 1은 오른쪽으로 이동. 
+
+- align-items의 인자값을 받으며 개별로 정렬할 수 있는 align-self 속성. 
+- 자식 요소에 따로 css 셀렉터로 클래스를 주어 align-self 하고 flex-end 등을 주면 됨
+
+- flex-wrap
+- wrap: 요소들을 여러 줄에 걸쳐 정렬
+- wrap-reverse: 요소들을 여러 줄에 걸쳐 반대로 정렬
+
+- flex-flow
+- flex-direction과 flex-wrap을 같이 사용한 것과 같은 효과를 냄. 
+- row wrap: 요소를 가로선 상의 여러줄에 걸쳐 정렬
+- column wrap: 요소를 세로선 상의 여러줄에 걸쳐 정렬
+
+- align-content : align-items는 컨테이너 안에서 요소를 정렬, align-content는 여러 줄들 사이의 간격을 지정.
+- 따라서 한 줄만 있는 경우, align-content는 효과를 보이지 않음 
+- flex-start: 여러 줄들을 컨테이너의 꼭대기에 정렬
+- flex-end: 여러 줄들을 컨테이너 바닥에 정렬
+- center: 여러 줄들을 세로선 상의 가운데에 정렬
+- space-between: 여러 줄들 사이에 동일한 간격을 둠
+- space-around: 여러 줄들 주위에 동일한 간격을 둠
+- stretch: 여러 줄들을 컨테이너에 맞도록 늘림. -->

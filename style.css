@@ -1,0 +1,12 @@
+.box {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.box-design {
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    color: white;
+}
+
